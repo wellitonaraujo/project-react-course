@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ecommerceTitle {
+    font-size: 2rem;
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
