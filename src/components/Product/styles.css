@@ -1,26 +1,35 @@
-.contaider {
-    width: 280px;
+.box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    list-style: none;
+  
 
-    border: solid 1px rgb(93, 93, 93);
-    padding: 20px;
+}
+
+.box li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    border-radius: 5px;
-    margin-right: 30px;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 13px;
+ 
 }
 
-.title {
+.box img {
+    max-width: 170px;
+    max-height: 200px;
+    border-radius: 4px;
+}
+
+.titleProduct {
     font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.price {
-    font-size: 1.5rem;
-}
-
-.img {
-    height: 250px;
+.titlePrice {
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 

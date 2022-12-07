@@ -1,14 +1,34 @@
 import "./styles.css";
-import smartphone from "../../assets/smartphone.jpg"
 import Button from "../Button"
+import { useEffect, useState } from "react";
+import api from "../../services/api"
 
-function Product({ title, price, img }) {
+function Product() {
+  const [products, setProducts] = useState([])
+  
+    useEffect(() => {
+      api.get("products").then((res) => {
+        console.log(res.data)
+        setProducts(res.data)
+      })
+
+    }, [])
+  
+
     return (
-       <div className="contaider">
-        <img src={smartphone} className="img"/>
-          <p className="title">{title}</p>
-          <h3 className="price">{price}</h3>
-         <Button />
+       <div>
+          <div className="box">
+       
+            {products.map(product => (
+              <li key={product.id}>
+                  <img src={product.image}/>
+                  <p className="titleProduct">{product.title}</p>
+                  <h3 className="titlePrice">R$ {product.price}</h3>
+                  <Button />
+              </li>
+            ))}
+    
+          </div>
        </div>
     );
   }

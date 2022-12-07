@@ -6,19 +6,16 @@
 
 .back { 
     text-decoration: none;
-    font-size: 1.2rem;
-    color: black;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.6rem;
+  
 }
 
 .titleCart {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(41, 41, 41);
     font-size: 1.6rem;
 }
 
 .img {
-
     height: 40px;
 }
 
@@ -26,6 +23,28 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: aqua;
     align-items: center;
+}
+
+.listCart {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cart {
+    border: solid 1px #000;
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.trash {
+    border: solid 1px #000;
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
 }

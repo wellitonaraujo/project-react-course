@@ -1,7 +1,12 @@
+body {
+    background-color: #ae338c;
+}
+
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .ecommerceTitle {
@@ -9,5 +14,11 @@
     justify-items: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
+    color: rgb(41, 41, 41);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.linkcart{
     flex-direction: column;
 }
