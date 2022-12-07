@@ -1,0 +1,31 @@
+.containerCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.back { 
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titleCart {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(41, 41, 41);
+    font-size: 1.6rem;
+}
+
+.img {
+
+    height: 40px;
+}
+
+.containerCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: aqua;
+    align-items: center;
+}
