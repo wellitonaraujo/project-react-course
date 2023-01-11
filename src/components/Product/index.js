@@ -5,6 +5,7 @@ import api from "../../services/api"
 
 function Product() {
   const [products, setProducts] = useState([])
+  const [count, setCount] = useState(0)
   
     useEffect(() => {
       api.get("products").then((res) => {
@@ -24,7 +25,7 @@ function Product() {
                   <img src={product.image}/>
                   <p className="titleProduct">{product.title}</p>
                   <h3 className="titlePrice">R$ {product.price}</h3>
-                  <Button />
+                  <Button props={"Adicionar ao carrinho"} />
               </li>
             ))}
     
