@@ -1,10 +1,15 @@
 .btn {
-    padding: 6px 10px;
-    font-size: 1.1rem;
+    padding: 8px 10px;
+    font-size: 1.3rem;
     margin-bottom: 10px;
-    background-color: #ae338c;
+    background-color: #3735ba;
     color: white;
     font-family: sans-serif;
     border: none;
     border-radius: 3px;
+}
+
+.countText {
+    font-size: 1.4rem;
+    font-family: sans-serif;
 }
