@@ -8,7 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<ListProduct />} />
-        <Route path="cart" element={<Cart />} />
+        <Route path="cart" element={<Cart />}  />
       </Routes>
   </BrowserRouter>
   );
